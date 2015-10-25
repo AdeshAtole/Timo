@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMain_HomeScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/tvSubjectName_homeScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Test"
+            android:textSize="50sp" />
+
+        <ProgressBar
+            android:id="@+id/pbSubProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSubjectName_homeScreen"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="66dp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp" />
+
+        <TextView
+            android:id="@+id/tvRemaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pbSubProgress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llMenu_HomeScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/ibMenuTimeTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/timetableb" />
+
+        <ImageButton
+            android:id="@+id/ibMenuNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/notesb" />
+
+        <ImageButton
+            android:id="@+id/ibMenuNotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/noticeb" />
+
+        <ImageButton
+            android:id="@+id/ibMenuMaps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/mapsb" />
+
+        <ImageView
+            android:id="@+id/ivblank"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/blankbutton" >
+        </ImageView>
+    </LinearLayout>
+
+</RelativeLayout>

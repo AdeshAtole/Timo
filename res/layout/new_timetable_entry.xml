@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/svTTDays"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/bTTSun"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:background="@drawable/time_table_days_button"
+                android:text="Sun"
+                android:textColor="#FFF"
+                android:textSize="20sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/bTTMon"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:background="@drawable/time_table_days_button"
+                android:text="Mon"
+                android:textColor="#FFF"
+                android:textSize="20sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/bTTTue"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:background="@drawable/time_table_days_button"
+                android:text="Tue"
+                android:textColor="#FFF"
+                android:textSize="20sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/bTTWed"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:background="@drawable/time_table_days_button"
+                android:text="Wed"
+                android:textColor="#FFF"
+                android:textSize="20sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/bTTThu"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:background="@drawable/time_table_days_button"
+                android:text="Thu"
+                android:textColor="#FFF"
+                android:textSize="20sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/bTTFri"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:background="@drawable/time_table_days_button"
+                android:text="Fri"
+                android:textColor="#FFF"
+                android:textSize="20sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/bTTSat"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:background="@drawable/time_table_days_button"
+                android:text="Sat"
+                android:textColor="#FFF"
+                android:textSize="20sp" >
+            </Button>
+
+            <Button
+                android:layout_width="60sp"
+                android:layout_height="match_parent"
+                android:background="@drawable/time_table_days_button" >
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Some Dummy stuff! -->
+    <!-- Dummy TextView for Debugging Purpose HERE -->
+    <!-- Dummy Ends -->
+
+    <ListView
+        android:id="@+id/lvListOfSubjects_TT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llButtons_newTTEntry"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/svTTDays" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/llButtons_newTTEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/svTTDays"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/bAddNewSubject_newTTEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add" >
+        </Button>
+
+        <Button
+            android:id="@+id/bNext_newTTEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Next" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTapToAdd_TT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/svTTDays"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Tap to Add" >
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
